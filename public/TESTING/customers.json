@@ -1,0 +1,19 @@
+[{
+        "id": 1,
+        "name": "John Doe",
+        "company": "Jedun",
+        "phone": "0701348834"
+    },
+    {
+        "id": 2,
+        "name": "John Smith",
+        "company": "Heroku",
+        "phone": "080554444"
+    },
+    {
+        "id": 3,
+        "name": "Mary Dan",
+        "company": "Nerlify",
+        "phone": "0901348834"
+    }
+]

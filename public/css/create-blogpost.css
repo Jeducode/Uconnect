@@ -1,0 +1,293 @@
+:root {
+    --primary-color: #6d23a7;
+    --secondary-color: #e7cefb;
+    --tertiary-color: #f4f3f3;
+    --light-text-color: #908e8e;
+    --light-background-color: #F4F3F3;
+}
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Roboto;
+}
+
+body {
+    background: var(--primary-color);
+    overflow-y: hidden;
+}
+
+/* Template classes */
+.container {
+    margin: 0 10px;
+
+}
+
+button,
+input {
+    border-style: none;
+}
+
+.btn-round {
+    border-radius: 44.5px;
+}
+
+.btn-lg {
+    width: 250px;
+    height: 50px;
+    background: var(--primary-color);
+    color: white;
+}
+
+.lg-btn-txt {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: white;
+}
+
+.spacer {
+    margin-bottom: 30px;
+}
+
+.small-spacer {
+    margin-bottom: 15px;
+}
+
+.para-spacer {
+    margin-bottom: 10px;
+}
+
+.input-round {
+    border-radius: 44.5px;
+    width: 250px;
+    height: 50px;
+    padding: 10px 10px 10px 30px;
+    border-color: var(--primary-color);
+    border-width: 5px;
+    font-size: 16px;
+}
+
+#create-post {
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--light-text-color);
+}
+
+hr {
+    margin-bottom: 10px;
+}
+
+/* Main Page */
+
+/* Header */
+
+.header {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.menu-button {
+    padding: 5px 10px;
+    color: white;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.menu-button a {
+    color: whitesmoke;
+}
+
+
+#Menu-icon {
+    margin-right: 30px;
+    background: green;
+}
+
+#home-button {
+    background: var(--primary-color);
+    margin-right: auto;
+}
+
+#logout-button {
+    background: red;
+}
+
+.profile-img {
+    height: 100px;
+    width: 100px;
+    background-color: #bbb;
+    border-radius: 50%;
+}
+
+.post-img {
+    height: 60px;
+    width: 60px;
+    background-color: #bbb;
+    border-radius: 50%;
+}
+
+/* Body */
+
+/* Left-bar */
+
+.main-container {
+    height: 85vh;
+    overflow-y: scroll;
+}
+
+.circle {
+    height: 70px;
+    width: 70px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.left-bar {
+    background: #E7CEFB;
+    padding: 20px 0 20px 10px;
+    display: none;
+    height: 85vh;
+
+}
+
+
+
+.left-bar-options {
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    padding: 5px 20px;
+    width: 200px;
+    display: inline-block;
+    margin: 10px 10px 10px 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#target3 {
+    background: #EEECEC;
+    border: 2px solid var(--primary-color);
+}
+
+/* Main Content */
+
+.main-div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-container {
+    background: white;
+    padding: 20px 10px 20px 30px;
+}
+
+main {
+    flex-grow: 1
+}
+
+.post-container {
+    padding: 10px;
+    background: #FDF8FF;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    border: #908e8e;
+}
+
+#text-area {
+    width: 80%;
+    height: 30%;
+    background: var(--light-background-color);
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
+#post-title {
+    width: 80%;
+    background: var(--light-background-color);
+    border-radius: 10px;
+    padding: 20px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+#post-category {
+    margin: 30px 0;
+}
+
+#select-category {
+    margin-left: 10px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background: var(--light-background-color);
+}
+
+/* --------------------------------------------------------- */
+/* --------------------------------------------------------- */
+/* --------------------------------------------------------- */
+/* --------------------------------------------------------- */
+/* --------------------------------------------------------- */
+/* --------------------------------------------------------- */
+/* --------------------------------------------------------- */
+
+/* Media Query */
+
+@media only screen and (min-width: 768px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+
+    .main-container {
+        height: 85vh;
+        overflow-y: auto;
+        flex-grow: 1;
+    }
+
+    main {
+        flex-grow: 1
+    }
+
+    .menu-button {
+        width: auto;
+        margin: 5px 0;
+    }
+
+    .container {
+        margin: 0 30px;
+    }
+
+    #Menu-icon {
+        display: none;
+    }
+
+    .left-bar {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+    .container {
+        margin: 0 50px;
+    }
+
+    .main-container {
+        background: white;
+        padding: 20px 80px 20px 80px;
+    }
+
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="/fontawesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/settings.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <title>settings</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="container real-header">
+        <div class="header">
+            <button class="menu-button" id="Menu-icon">
+                <i class="fas fa-bars"></i>
+            </button>
+            <button class="menu-button" id="home-button">
+                Home
+            </button>
+            <button class="menu-button" id="logout-button">
+                <a href='blogpost.html' id='target2'>Home</a>
+            </button>
+        </div>
+    </div>
+
+    <!-- Left bar -->
+    <div class="container main-div">
+        <div class="left-bar">
+            <div id="left-bar-contents">
+                <span class="circle"></span>
+                <h3>Hey User</h3>
+                <div class="left-bar-select">
+                    <a href='profile.html' id='target1' class='left-bar-options'>Profile</a>
+                </div>
+                <div class="left-bar-select">
+                    <a href='blogpost.html' id='target2' class='left-bar-options'>Blog Post</a>
+                </div>
+                <div class="left-bar-select">
+                    <a href='create-blogpost.html' id='target3' class='left-bar-options'> Create Blog Posts</a>
+                </div>
+                <div class="left-bar-select">
+                    <a href='find-user.html' id='target4' class='left-bar-options'>Find a user</a>
+                </div>
+                <div class="left-bar-select">
+                    <a href='all_users.html' id='target5' class='left-bar-options'> All users</a>
+                </div>
+                <div class="left-bar-select">
+                    <a href='chat.html' id='target6' class='left-bar-options'> Chat with a user</a>
+                </div>
+                <div class="left-bar-select">
+                    <a href='settings.html' id='target7' class='left-bar-options'> settings</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Main content -->
+        <main>
+            <div class="main-container">
+                <form id="settings-form" action="">
+                    <div class="settings-form-div">
+                        <img id="user-img" src="img/img1.jpg" alt="">
+                        <p id="upload-pic-text">Upload a profile Picture</p>
+                        <input class="input-round-small" id="upload-profile-pic" type="file" name="pic"
+                            accept="image/*">
+                        <button class="input-round-small" id="upload-img-button">Upload</button>
+                        <hr>
+
+                        <label for="first-name"><b>First Name</b></label>
+                        <input type="text" name="first-name" required>
+
+                        <label for="last-name"><b>Last Name</b></label>
+                        <input type="text" name="last-name" required>
+
+                        <label for="user-name"><b>User Name</b></label>
+                        <input type="text" name="user-name" required>
+                        <hr>
+                    </div>
+                </form>
+
+                <!-- Short Bio -->
+                <div id="short-bio">
+                    <button>Short Bio</button>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+
+                <button id="update-settings">Update</button>
+
+
+
+
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>
