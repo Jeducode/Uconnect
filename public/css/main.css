@@ -25,6 +25,12 @@ input {
   border-style: none;
 }
 
+input,
+.test {
+  border: none !important;
+  border-color: transparent !important;
+}
+
 .btn-round {
   border-radius: 44.5px;
 }
@@ -41,21 +47,24 @@ input {
 }
 
 .spacer {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .small-spacer {
   margin-bottom: 15px;
 }
 
+#rem-password {
+  margin-top: 30px;
+}
 .input-round {
-  border-radius: 44.5px;
   width: 250px;
-  height: 50px;
-  padding: 10px 10px 10px 30px;
-  border-color: var(--primary-color);
-  border-width: 5px;
-  font-size: 16px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 5px 10px 5px 15px;
+  border: none !important;
+  border-color: transparent !important;
+  font-size: 12px;
 }
 
 img {

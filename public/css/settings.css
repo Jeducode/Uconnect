@@ -1,112 +1,121 @@
 :root {
-    --primary-color: #6d23a7;
-    --secondary-color: #e7cefb;
-    --tertiary-color: #f4f3f3;
-    --light-text-color: #908e8e;
-    --light-background-color: #F4F3F3;
+  --primary-color: #6d23a7;
+  --secondary-color: #e7cefb;
+  --tertiary-color: #f4f3f3;
+  --light-text-color: #908e8e;
+  --light-background-color: #f4f3f3;
 }
 
 /* Reset */
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    text-decoration: none;
-    font-family: Roboto;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: Roboto;
 }
 
 body {
-    background: var(--primary-color);
-    overflow-y: hidden;
+  background: var(--primary-color);
+  overflow-y: hidden;
 }
 
 /* Template classes */
 .container {
-    margin: 0 10px;
-
+  margin: 0 10px;
 }
 
 button,
 input {
-    border-style: none;
+  border-style: none;
 }
 
 .btn-round {
-    border-radius: 44.5px;
+  border-radius: 44.5px;
 }
 
 .btn-lg {
-    width: 250px;
-    height: 50px;
-    background: var(--primary-color);
+  width: 250px;
+  height: 50px;
+  background: var(--primary-color);
 }
 
-
 .lg-btn-txt {
-    text-transform: uppercase;
-    font-size: 18px;
-    color: white;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: white;
 }
 
 .spacer {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .small-spacer {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .para-spacer {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .input-round {
-    border-radius: 44.5px;
-    width: 250px;
-    height: 50px;
-    padding: 10px 10px 10px 30px;
-    border-color: var(--primary-color);
-    border-width: 5px;
-    font-size: 16px;
+  border-radius: 44.5px;
+  width: 250px;
+  height: 50px;
+  padding: 10px 10px 10px 30px;
+  border-color: var(--primary-color);
+  border-width: 5px;
+  font-size: 16px;
 }
 
 .input-round-small {
-    border-radius: 5px;
-    padding: 10px 20px 10px 20px;
-    background: var(--primary-color);
-    color: white;
-    box-shadow: 0 1px #908e8e;
+  border-radius: 5px;
+  padding: 10px 20px 10px 20px;
+  background: var(--primary-color);
+  color: white;
+  box-shadow: 0 1px #908e8e;
 }
 
-input[type=text],
-input[type=password],
+input[type="text"],
+input[type="password"],
 textarea,
-
 #update-settings {
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    border: none;
-    background: #f1f1f1;
-    border-radius: 5px;
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+#select-gender,
+#select-gender {
+  width: 100%;
+  padding: 15px 30px 15px 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
 #update-settings {
-    background: var(--primary-color);
-    color: whitesmoke;
-    font-size: 1rem;
+  background: var(--primary-color);
+  color: whitesmoke;
+  font-size: 1rem;
 }
 
 #my-posts {
-    font-weight: bold;
-    font-size: 20px;
-    color: var(--light-text-color);
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--light-text-color);
 }
 
 hr {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 /* Main Page */
@@ -114,53 +123,51 @@ hr {
 /* Header */
 
 .header {
-    background: white;
-    padding: 10px;
-    border-radius: 8px;
-    margin: 10px 0;
-    display: flex;
-    justify-content: space-between;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
 }
 
-
 .menu-button {
-    padding: 5px 10px;
-    color: white;
-    margin: 5px 0;
-    border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+  margin: 5px 0;
+  border-radius: 5px;
 }
 
 .menu-button a {
-    color: whitesmoke;
+  color: whitesmoke;
 }
 
-
 #Menu-icon {
-    margin-right: 30px;
-    background: green;
+  margin-right: 30px;
+  background: green;
 }
 
 #home-button {
-    background: var(--primary-color);
-    margin-right: auto;
+  background: var(--primary-color);
+  margin-right: auto;
 }
 
 #logout-button {
-    background: red;
+  background: red;
 }
 
 .profile-img {
-    height: 100px;
-    width: 100px;
-    background-color: #bbb;
-    border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background-color: #bbb;
+  border-radius: 50%;
 }
 
 .post-img {
-    height: 60px;
-    width: 60px;
-    background-color: #bbb;
-    border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  background-color: #bbb;
+  border-radius: 50%;
 }
 
 /* Body */
@@ -168,88 +175,83 @@ hr {
 /* Left-bar */
 
 .main-container {
-    height: 85vh;
-    overflow-y: scroll;
+  height: 85vh;
+  overflow-y: scroll;
 }
 
 .circle {
-    height: 70px;
-    width: 70px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
+  height: 70px;
+  width: 70px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
 }
 
 .left-bar {
-    background: #E7CEFB;
-    padding: 20px 0 20px 10px;
-    display: none;
-    height: 85vh;
-
+  background: #e7cefb;
+  padding: 20px 0 20px 10px;
+  display: none;
+  height: 85vh;
 }
 
-
-
 .left-bar-options {
-    background-color: white;
-    border-radius: 5px;
-    color: black;
-    padding: 5px 20px;
-    width: 200px;
-    display: inline-block;
-    margin: 10px 10px 10px 0;
-    cursor: pointer;
-    text-decoration: none;
+  background-color: white;
+  border-radius: 5px;
+  color: black;
+  padding: 5px 20px;
+  width: 200px;
+  display: inline-block;
+  margin: 10px 10px 10px 0;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 #target7 {
-    background: #EEECEC;
-    border: 2px solid var(--primary-color);
+  background: #eeecec;
+  border: 2px solid var(--primary-color);
 }
 
 /* Main Content */
 
 .main-div {
-    display: flex;
+  display: flex;
 }
 
 .main-container {
-    background: white;
-    padding: 20px 10px 20px 10px;
+  background: white;
+  padding: 20px 10px 20px 10px;
 }
 
 main {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
-
-
 #short-bio {
-    background: var(--primary-color);
-    border-radius: 5px;
-    padding: 10px 20px;
-    margin: 20px 0;
+  background: var(--primary-color);
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 20px 0;
 }
 
 #short-bio button {
-    background: var(--secondary-color);
-    padding: 5px;
-    font-weight: bold;
-    margin-bottom: 10px;
+  background: var(--secondary-color);
+  padding: 5px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 #user-img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 #upload-pic-text {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 #upload-profile-pic {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 /* --------------------------------------------------------- */
@@ -263,52 +265,49 @@ main {
 /* Media Query */
 
 @media only screen and (min-width: 768px) {
-    .header {
-        display: flex;
-        justify-content: space-between;
-    }
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
 
+  .main-container {
+    height: 85vh;
+    overflow-y: scroll;
+  }
 
+  main {
+    flex-grow: 1;
+  }
 
-    .main-container {
-        height: 85vh;
-        overflow-y: scroll;
-    }
+  .menu-button {
+    width: auto;
+    margin: 5px 0;
+  }
 
-    main {
-        flex-grow: 1;
-    }
+  .container {
+    margin: 0 30px;
+  }
 
-    .menu-button {
-        width: auto;
-        margin: 5px 0;
-    }
+  #Menu-icon {
+    display: none;
+  }
 
-    .container {
-        margin: 0 30px;
-    }
+  .left-bar {
+    display: block;
+  }
 
-    #Menu-icon {
-        display: none;
-    }
-
-    .left-bar {
-        display: block;
-    }
-
-    #user-img {
-        width: 60%;
-    }
+  #user-img {
+    width: 60%;
+  }
 }
 
 @media only screen and (min-width: 1140px) {
-    .container {
-        margin: 0 50px;
-    }
+  .container {
+    margin: 0 50px;
+  }
 
-    .main-container {
-        background: white;
-        padding: 20px 80px 20px 80px;
-    }
-
+  .main-container {
+    background: white;
+    padding: 20px 80px 20px 80px;
+  }
 }

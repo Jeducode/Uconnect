@@ -1,65 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Uconnect</title>
+    <link rel="stylesheet" href="font/Roboto/Roboto-Regular.ttf" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Uconnect</title>
-  <link rel="stylesheet" href="font/Roboto/Roboto-Regular.ttf" />
-  <link rel="stylesheet" href="css/main.css" />
-</head>
+  <body>
+    <div class="page-wide">
+      <div class="login-container">
+        <!-- Left side of the Page -->
+        <div class="left-content">
+          <!-- Login -->
+          <div id="left-login-inner">
+            <div class="spacer">
+              <h2>Welcome back to Uconnect.</h2>
+            </div>
 
-<body>
-  <div class="page-wide">
-    <div class="login-container">
-      <!-- Left side of login Page -->
-      <div class="left-content">
-        <div class="spacer">
-          <h2>Welcome back to Uconnect.</h2>
-        </div>
+            <div class="spacer">
+              <div class="spacer">
+                <h4>Enter your Login Details</h4>
+              </div>
 
-        <div class="spacer">
-          <div class="spacer">
-            <h4>Enter your Login Details</h4>
+              <div class="spacer">
+                <!-- <label for="login-username">User name</label> -->
+                <input
+                  class="input-round"
+                  type="text"
+                  name="login-username"
+                  id="login-username"
+                  placeholder="User name"
+                />
+              </div>
+              <div class="spacer">
+                <!-- <label for="login-password">Password</label> -->
+                <input
+                  class="input-round"
+                  type="password"
+                  name="login-password"
+                  id="login-password"
+                  placeholder="Password"
+                />
+                <div id="rem-password" class="spacer">
+                  <input type="checkbox" id="remember-password" />
+                  <label for="remember-password">Remember password</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="spacer">
+              <a href="profile.html"
+                ><button class="btn btn-round btn-lg lg-btn-txt">
+                  Login
+                </button></a
+              >
+            </div>
+
+            <div class="small-spacer">
+              <p>Haven't created an account on Uconnect?</p>
+            </div>
+
+            <p><a href="#" id="create-account"> Create an account now</a></p>
           </div>
 
-          <div class="spacer">
-            <!-- <label for="login-username">User name</label> -->
-            <input class="input-round" type="text" name="login-username" id="login-username" placeholder="User name" />
-          </div>
-          <div class="spacer">
-            <!-- <label for="login-password">Password</label> -->
-            <input class="input-round" type="password" name="login-password" id="login-password"
-              placeholder="Password" />
-          </div>
-          <div class="spacer">
-            <input type="checkbox" id="remember-password" />
-            <label for="remember-password">Remember password</label>
+          <!-- Sign Up -->
+          <div id="left-signup-inner">
+            <div class="spacer">
+              <h2>Welcome to Uconnect.</h2>
+            </div>
+
+            <div class="spacer">
+              <div class="spacer">
+                <h4>Create an Account Now</h4>
+              </div>
+
+              <div class="spacer">
+                <input
+                  class="input-round test"
+                  type="text"
+                  name="signup-firstname"
+                  id="signup-firstname"
+                  placeholder="First Name"
+                />
+              </div>
+              <div class="spacer">
+                <input
+                  class="input-round"
+                  type="text"
+                  name="signup-lastname"
+                  id="signup-lastname"
+                  placeholder="Last Name"
+                />
+              </div>
+              <div class="spacer">
+                <input
+                  class="input-round"
+                  type="password"
+                  name="signup-password"
+                  id="signup-password"
+                  placeholder="Password"
+                />
+              </div>
+              <div class="spacer">
+                <input
+                  class="input-round"
+                  type="password"
+                  name="signup-password"
+                  id="signup-password"
+                  placeholder="Repeat Password"
+                />
+              </div>
+            </div>
+
+            <div class="spacer">
+              <a href="profile.html"
+                ><button class="btn btn-round btn-lg lg-btn-txt">
+                  SIGN UP
+                </button></a
+              >
+            </div>
+
+            <div class="small-spacer">
+              <p>Already have an account?</p>
+            </div>
+
+            <p><a href="#" id="login-account"> Login now</a></p>
           </div>
         </div>
-
-        <div class="spacer">
-          <button class="btn btn-round btn-lg lg-btn-txt">Login</button>
+        <!-- Right side of login Page -->
+        <div class="right-content">
+          <img src="img/connect.svg" alt="" />
         </div>
-
-        <div class="small-spacer">
-          <p>Haven't created an account on Uconnect?</p>
-        </div>
-
-        <p><a href="#"> Create an account now</a></p>
-      </div>
-      <!-- Right side of login Page -->
-      <div class="right-content">
-        <img src="img/img1.jpg" alt="" />
       </div>
     </div>
-  </div>
 
-  <footer>
-
-  </footer>
-  <script src="js/login.js"></script>
-</body>
-
+    <footer></footer>
+    <script src="js/login.js"></script>
+  </body>
 </html>
