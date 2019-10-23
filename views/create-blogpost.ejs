@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="/fontawesome/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/create-blogpost.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <title>Create Blog Post</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <% include partials/navbar %>
+    <!-- Left bar -->
+    <div class="container main-div">
+      <% include partials/left-sidebar %>
+
+      <!-- Main content -->
+      <main>
+        <div class="main-container">
+          <div id="create-post">
+            <p class="spacer">Create post</p>
+          </div>
+
+          <!-- Posts -->
+          <input
+            id="post-title"
+            type="text"
+            placeholder="Title of post"
+            required
+          />
+          <textarea
+            id="text-area"
+            placeholder="Type or paste here"
+            required
+          ></textarea>
+
+          <div id="post-category">
+            <label for="select-category">Select Category </label>
+            <select class="form-control" id="select-category">
+              <option class="options">Politics</option>
+              <option class="options">Music</option>
+              <option class="options">Sports</option>
+              <option class="options">Entertainment</option>
+              <option class="options">Education</option>
+            </select>
+          </div>
+
+          <div>
+            <button type="submit" class="btn-lg btn-round">POST</button>
+          </div>
+          <!-- Post ends -->
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

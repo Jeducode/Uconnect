@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="/fontawesome/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/profile.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <title>Profile</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <% include partials/navbar %>
+    <!-- Left bar -->
+    <div class="container main-div">
+      <% include partials/left-sidebar %>
+
+      <!-- Main content -->
+      <main>
+        <div class="main-container">
+          <div id="profile-detail">
+            <img class="profile-img" src="img/hello.svg" alt="" />
+
+            <ul id="profile-detail-lists">
+              <li class="profile-detail-list">
+                <strong>Full Name : </strong>Oladokun Oladapo
+              </li>
+              <li class="profile-detail-list">
+                <strong>Username : </strong>Jeducoder
+              </li>
+              <li class="profile-detail-list">
+                <strong>Gender : </strong>Male
+              </li>
+              <li class="profile-detail-list">
+                <strong>Age range : </strong>25-30
+              </li>
+            </ul>
+          </div>
+          <!-- Short Bio -->
+          <div id="short-bio">
+            <button>Short Bio</button>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+              temporibus aliquid veniam labore praesentium ullam! Rem natus, in
+              maiores libero omnis quas dolores esse dolorum inventore magni
+              aperiam, provident quae!
+            </p>
+          </div>
+
+          <p id="my-posts" class="spacer">My posts</p>
+
+          <!-- Posts -->
+          <div class="post-container">
+            <div class="post-details">
+              <div id="post-header-div">
+                <div id="post-header-subdiv1">
+                  <img
+                    class="post-img para-spacer"
+                    src="img/hello.svg"
+                    alt=""
+                  />
+                </div>
+                <div id="post-header-subdiv2">
+                  <p id="post-detail-name"><strong>Mr Jedu</strong></p>
+                  <p id="post-detail-about">
+                    <small>
+                      Front-End-Developer | Web designer | Graphics
+                      Designer</small
+                    >
+                  </p>
+                  <p id="post-detail-time"><small>5 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+            <div class="posts">
+              <p id="post-title"><strong>The Event Horizon</strong></p>
+              <p id="single-posts">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                iste nisi explicabo cupiditate rem modi accusamus vitae omnis
+                magnam temporibus. Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Nulla iste nisi explicabo cupiditate rem modi
+                accusamus vitae omnis magnam temporibus!
+              </p>
+              <hr />
+              <div class="post-buttons">
+                <div class="reaction-buttons">
+                  <button class="like-button">
+                    <i class="fas fa-heart"></i>
+                    45
+                  </button>
+
+                  <button class="dislike-button">
+                    <i class="fas fa-heart-broken"></i>
+                    3
+                  </button>
+                </div>
+
+                <div class="action-buttons">
+                  <button class="edit-button">
+                    <i class="far fa-edit"></i>
+                    Edit
+                  </button>
+                  <button class="delete-button">
+                    <i class="fas fa-trash-alt"></i>
+                    Delete
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="post-container">
+            <div class="post-details">
+              <div id="post-header-div">
+                <div id="post-header-subdiv1">
+                  <img
+                    class="post-img para-spacer"
+                    src="img/hello.svg"
+                    alt=""
+                  />
+                </div>
+                <div id="post-header-subdiv2">
+                  <p id="post-detail-name"><strong>Mr Jedu</strong></p>
+                  <p id="post-detail-about">
+                    <small>
+                      Front-End-Developer | Web designer | Graphics
+                      Designer</small
+                    >
+                  </p>
+                  <p id="post-detail-time"><small>5 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+            <div class="posts">
+              <p id="post-title"><strong>The Event Horizon</strong></p>
+              <p id="single-posts">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                iste nisi explicabo cupiditate rem modi accusamus vitae omnis
+                magnam temporibus. Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Nulla iste nisi explicabo cupiditate rem modi
+                accusamus vitae omnis magnam temporibus!
+              </p>
+              <hr />
+              <div class="post-buttons">
+                <div class="reaction-buttons">
+                  <button class="like-button">
+                    <i class="fas fa-heart"></i>
+                    45
+                  </button>
+
+                  <button class="dislike-button">
+                    <i class="fas fa-heart-broken"></i>
+                    3
+                  </button>
+                </div>
+
+                <div class="action-buttons">
+                  <button class="edit-button">
+                    <i class="far fa-edit"></i>
+                    Edit
+                  </button>
+                  <button class="delete-button">
+                    <i class="fas fa-trash-alt"></i>
+                    Delete
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Post ends -->
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
