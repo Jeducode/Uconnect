@@ -1,78 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link href="/fontawesome/css/all.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/settings.css" />
-    <link rel="stylesheet" href="css/all.css" />
-    <title>settings</title>
-  </head>
+<body>
+  <!-- Header -->
+  <% include partials/navbar %>
+  <!-- Left bar -->
+  <div class="container main-div">
+    <% include partials/left-sidebar %>
+    <!-- Main content -->
+    <main>
+      <div class="main-container">
+        <form id="settings-form" action="">
+          <div class="settings-form-div">
+            <img id="user-img" src="img/welcome.svg" alt="" />
+            <p id="upload-pic-text">Upload a profile Picture</p>
+            <input
+              class="input-round-small"
+              id="upload-profile-pic"
+              type="file"
+              name="pic"
+              accept="image/*"
+            />
+            <button class="input-round-small" id="upload-img-button">
+              Upload
+            </button>
+            <hr />
 
-  <body>
-    <!-- Header -->
-    <% include partials/navbar %>
-    <!-- Left bar -->
-    <div class="container main-div">
-      <% include partials/left-sidebar %>
-      <!-- Main content -->
-      <main>
-        <div class="main-container">
-          <form id="settings-form" action="">
-            <div class="settings-form-div">
-              <img id="user-img" src="img/welcome.svg" alt="" />
-              <p id="upload-pic-text">Upload a profile Picture</p>
-              <input
-                class="input-round-small"
-                id="upload-profile-pic"
-                type="file"
-                name="pic"
-                accept="image/*"
-              />
-              <button class="input-round-small" id="upload-img-button">
-                Upload
-              </button>
-              <hr />
+            <label for="first-name"><b>First Name</b></label>
+            <input type="text" name="first-name" required />
 
-              <label for="first-name"><b>First Name</b></label>
-              <input type="text" name="first-name" required />
+            <label for="last-name"><b>Last Name</b></label>
+            <input type="text" name="last-name" required />
 
-              <label for="last-name"><b>Last Name</b></label>
-              <input type="text" name="last-name" required />
+            <label for="user-name"><b>User Name</b></label>
+            <input type="text" name="user-name" required />
 
-              <label for="user-name"><b>User Name</b></label>
-              <input type="text" name="user-name" required />
+            <label for="select-gender">Select Gender </label>
+            <select class="form-control" id="select-gender">
+              <option class="options">Male</option>
+              <option class="options">Female</option>
+              <option class="options">Other</option>
+            </select>
 
-              <label for="select-gender">Select Gender </label>
-              <select class="form-control" id="select-gender">
-                <option class="options">Male</option>
-                <option class="options">Female</option>
-                <option class="options">Other</option>
-              </select>
-
-              <label for="select-gender">Select Gender </label>
-              <select class="form-control" id="select-gender">
-                <option class="options">18-25</option>
-                <option class="options">25-30</option>
-                <option class="options">30-35</option>
-                <option class="options">35-40</option>
-                <option class="options">40-50</option>
-                <option class="options">Above 50</option>
-              </select>
-              <hr />
-            </div>
-          </form>
-
-          <!-- Short Bio -->
-          <div id="short-bio">
-            <button>Short Bio</button>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <label for="select-gender">Select Gender </label>
+            <select class="form-control" id="select-gender">
+              <option class="options">18-25</option>
+              <option class="options">25-30</option>
+              <option class="options">30-35</option>
+              <option class="options">35-40</option>
+              <option class="options">40-50</option>
+              <option class="options">Above 50</option>
+            </select>
+            <hr />
           </div>
+        </form>
 
-          <button id="update-settings">Update</button>
+        <!-- Short Bio -->
+        <div id="short-bio">
+          <button>Short Bio</button>
+          <textarea name="" id="" cols="30" rows="10"></textarea>
         </div>
-      </main>
-    </div>
-  </body>
-</html>
+
+        <button id="update-settings">Update</button>
+      </div>
+    </main>
+  </div>
+</body>

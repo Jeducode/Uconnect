@@ -1,140 +1,242 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link href="/fontawesome/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/blogpost.css" />
-    <link rel="stylesheet" href="css/all.css" />
-    <title>Profile</title>
-</head>
-
 <body>
-    <!-- Header -->
-    <% include partials/navbar %>
-    <!-- Left bar -->
-    <div class="container main-div">
+  <!-- Header -->
+  <% include partials/navbar %>
+  <!-- Left bar -->
+  <div class="container main-div">
     <% include partials/left-sidebar %>
 
-        <!-- Main content -->
-        <main>
-            <div class="main-container">
-                <div id="all-post-heading">
-                    <div id="all-posts">
-                        <p class="spacer">All posts</p>
-                    </div>
-                    <div id="post-category">
-                        <label for="select-category">Filter by Category </label>
-                        <select class="form-control" id="select-category">
-                            <option class="options">Politics</option>
-                            <option class="options">Music</option>
-                            <option class="options">Sports</option>
-                            <option class="options">Entertainment</option>
-                            <option class="options">Education</option>
-                        </select>
-                    </div>
-                </div>
+    <!-- Main content -->
+    <main>
+      <div class="main-container">
+        <div id="all-post-heading">
+          <div id="all-posts">
+            <p class="spacer">All posts</p>
+          </div>
+          <div id="post-category">
+            <label for="select-category">Filter by Category </label>
+            <select class="form-control" id="select-category">
+              <option class="options">All Categories</option>
+              <option class="options">Politics</option>
+              <option class="options">Music</option>
+              <option class="options">Sports</option>
+              <option class="options">Entertainment</option>
+              <option class="options">Education</option>
+            </select>
+          </div>
+        </div>
 
-
-
-                <!-- Posts -->
-                <div class="post-container">
-                    <div class="post-details">
-                        <div id="post-header-div">
-                            <div id="post-header-subdiv1">
-                                <img class="post-img para-spacer" src="img/img3.jpg" alt="">
-                            </div>
-                            <div id="post-header-subdiv2">
-                                <p id="post-detail-name"><strong>Mr Jedu</strong></p>
-                                <p id="post-detail-about"> <small> Front-End-Developer | Web designer | Graphics
-                                        Designer</small> </p>
-                                <p id="post-detail-time"> <small>5 mins ago</small> </p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="posts">
-                        <p id="post-title"><strong>The Event Horizon</strong></p>
-                        <p id="single-posts">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla iste nisi
-                            explicabo
-                            cupiditate rem modi
-                            accusamus vitae omnis magnam temporibus. Lorem, ipsum dolor sit amet consectetur adipisicing
-                            elit. Nulla
-                            iste nisi explicabo cupiditate rem modi
-                            accusamus vitae omnis magnam temporibus!
-                        </p>
-                        <hr>
-                        <div class="post-buttons">
-                            <div class="reaction-buttons">
-                                <button class="like-button">
-                                    <i class="fas fa-heart"></i>
-                                    45
-                                </button>
-
-                                <button class="dislike-button">
-                                    <i class="fas fa-heart-broken"></i>
-                                    3
-                                </button>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="post-container">
-                    <div class="post-details">
-                        <div id="post-header-div">
-                            <div id="post-header-subdiv1">
-                                <img class="post-img para-spacer" src="img/img3.jpg" alt="">
-                            </div>
-                            <div id="post-header-subdiv2">
-                                <p id="post-detail-name"><strong>Mr Jedu</strong></p>
-                                <p id="post-detail-about"> <small> Front-End-Developer | Web designer | Graphics
-                                        Designer</small> </p>
-                                <p id="post-detail-time"> <small>5 mins ago</small> </p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="posts">
-                        <p id="post-title"><strong>The Event Horizon</strong></p>
-                        <p id="single-posts">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla iste nisi
-                            explicabo
-                            cupiditate rem modi
-                            accusamus vitae omnis magnam temporibus. Lorem, ipsum dolor sit amet consectetur adipisicing
-                            elit. Nulla
-                            iste nisi explicabo cupiditate rem modi
-                            accusamus vitae omnis magnam temporibus!
-                        </p>
-                        <hr>
-                        <div class="post-buttons">
-                            <div class="reaction-buttons">
-                                <button class="like-button">
-                                    <i class="fas fa-heart"></i>
-                                    45
-                                </button>
-
-                                <button class="dislike-button">
-                                    <i class="fas fa-heart-broken"></i>
-                                    3
-                                </button>
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
-                <!-- Post ends -->
-
-
-
+        <!-- Posts -->
+        <div class="post-container">
+          <div class="post-details">
+            <div id="post-header-div">
+              <div id="post-header-subdiv1">
+                <img class="post-img para-spacer" src="img/user.svg" alt="" />
+              </div>
+              <div id="post-header-subdiv2">
+                <p id="post-detail-name"><strong>Mr Jedu</strong></p>
+                <p id="post-detail-about">
+                  <small>
+                    Front-End-Developer | Web designer | Graphics
+                    Designer</small
+                  >
+                </p>
+                <p id="post-detail-time"><small>5 mins ago</small></p>
+              </div>
             </div>
-        </main>
-    </div>
+          </div>
+          <div class="posts">
+            <p id="post-title"><strong>The Event Horizon</strong></p>
+            <p id="single-posts">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              iste nisi explicabo cupiditate rem modi accusamus vitae omnis
+              magnam temporibus. Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Nulla iste nisi explicabo cupiditate rem modi
+              accusamus vitae omnis magnam temporibus!
+            </p>
+            <div class="post-category">
+                <span><strong>Category : </strong> Politics</span>
+              </div>
+            <hr />
+            <div class="post-buttons">
+              <div class="reaction-buttons">
+                <button class="like-button">
+                  <i class="fas fa-heart"></i>
+                  45
+                </button>
 
+                <button class="dislike-button">
+                  <i class="fas fa-heart-broken"></i>
+                  3
+                </button>
+                <button class="reply-button">
+                  <i class="far fa-comment-alt"></i>
+                  Reply
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-container">
+          <div class="post-details">
+            <div id="post-header-div">
+              <div id="post-header-subdiv1">
+                <img class="post-img para-spacer" src="img/user.svg" alt="" />
+              </div>
+              <div id="post-header-subdiv2">
+                <p id="post-detail-name"><strong>Mr Jedu</strong></p>
+                <p id="post-detail-about">
+                  <small>
+                    Front-End-Developer | Web designer | Graphics
+                    Designer</small
+                  >
+                </p>
+                <p id="post-detail-time"><small>5 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+          <div class="posts">
+            <p id="post-title"><strong>The Event Horizon</strong></p>
+            <p id="single-posts">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              iste nisi explicabo cupiditate rem modi accusamus vitae omnis
+              magnam temporibus. Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Nulla iste nisi explicabo cupiditate rem modi
+              accusamus vitae omnis magnam temporibus!
+            </p>
+            <div class="post-category">
+                <span><strong>Category : </strong> Politics</span>
+              </div>
+            <hr />
+            <div class="post-buttons">
+              <div class="reaction-buttons">
+                <button class="like-button">
+                  <i class="fas fa-heart"></i>
+                  45
+                </button>
+
+                <button class="dislike-button">
+                  <i class="fas fa-heart-broken"></i>
+                  3
+                </button>
+                <button class="comment-button">
+                    <i class="fas fa-comment"></i>
+                    2
+                  </button>
+              </div>
+            </div>
+
+            <!-- Comment Form -->
+            <form class="reply-form">
+              <textarea
+                class="msger-input"
+                placeholder="Enter your message..."
+                required
+              ></textarea>
+              <button type="submit" class="reply-btn">
+                <i class="fas fa-comment"></i>
+              </button>
+            </form>
+
+         
+            <!-- Post Rplies -->
+            <div class="all-replies">
+              <div class="individual-reply">
+                <div class="reply-header">
+                  <div class="reply-header-img">
+                    <img
+                      class="reply-img para-spacer"
+                      src="img/unicorn.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="reply-header-detials">
+                    <p id="reply-detail-name"><strong>Mr Jedu</strong></p>
+                    <p id="reply-detail-about">
+                      <small>
+                        Front-End-Developer | Web designer | Graphics
+                        Designer</small
+                      >
+                    </p>
+                    <p id="reply-detail-time"><small>5 mins ago</small></p>
+                  </div>
+                </div>
+                <p id="reply-content">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Nulla iste nisi explicabo cupiditate rem modi accusamus vitae
+                  omnis magnam temporibus. Lorem, ipsum dolor sit amet
+                  consectetur adipisicing elit. Nulla iste nisi explicabo
+                  cupiditate rem modi accusamus vitae omnis magnam temporibus!
+                </p>
+                <br />
+                <hr />
+                <div class="reply-buttons">
+                  <div class="reaction-buttons">
+                    <button class="like-button">
+                      <i class="fas fa-heart"></i>
+                      10
+                    </button>
+
+                    <button class="dislike-button">
+                      <i class="fas fa-heart-broken"></i>
+                      0
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="individual-reply">
+                <div class="reply-header">
+                  <div class="reply-header-img">
+                    <img
+                      class="reply-img para-spacer"
+                      src="img/unicorn.svg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="reply-header-detials">
+                    <p id="reply-detail-name"><strong>Mr Jedu</strong></p>
+                    <p id="reply-detail-about">
+                      <small>
+                        Front-End-Developer | Web designer | Graphics
+                        Designer</small
+                      >
+                    </p>
+                    <p id="reply-detail-time"><small>5 mins ago</small></p>
+                  </div>
+                </div>
+
+                <p id="reply-content">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Nulla iste nisi explicabo cupiditate rem modi accusamus vitae
+                  omnis magnam temporibus. Lorem, ipsum dolor sit amet
+                  consectetur adipisicing elit. Nulla iste nisi explicabo
+                  cupiditate rem modi accusamus vitae omnis magnam temporibus!
+                </p>
+                <br />
+                <hr />
+                <div class="reply-buttons">
+                  <div class="reaction-buttons">
+                    <button class="like-button">
+                      <i class="fas fa-heart"></i>
+                      11
+                    </button>
+
+                    <button class="dislike-button">
+                      <i class="fas fa-heart-broken"></i>
+                      1
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="load-more"><strong><small>Load more</small></strong></p>
+            <p class="hide-comments"> Hide comments</p>
+          </div>
+        </div>
+        <!-- Post ends -->
+      </div>
+    </main>
+  </div>
 </body>
-
-</html>

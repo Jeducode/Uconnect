@@ -8,10 +8,10 @@ router.get("/login", (req, res) => res.render("login"));
 router.get("/profile", (req, res) => res.render("profile"));
 
 //Blog Post
-router.get("/blogposts", (req, res) => res.render("blogposts"));
+router.get("/posts", (req, res) => res.render("blogposts"));
 
 //Create blog Post
-router.get("/create-blogpost", (req, res) => res.render("create-blogpost"));
+router.get("/create-post", (req, res) => res.render("create-blogpost"));
 
 //Create blog Post
 router.get("/find-user", (req, res) => res.render("find-user"));
