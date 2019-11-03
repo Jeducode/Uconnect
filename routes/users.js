@@ -1,9 +1,6 @@
 const express = require("express");
 const router = express.Router();
 
-//Login Page
-router.get("/login", (req, res) => res.render("login"));
-
 //Profile Page
 router.get("/profile", (req, res) => res.render("profile"));
 
@@ -24,5 +21,55 @@ router.get("/chat", (req, res) => res.render("chat"));
 
 //All Users
 router.get("/setting", (req, res) => res.render("settings"));
+
+// POST REQUESTS
+router.post("/register", (req, res) => {
+  const {
+    signup_firstname,
+    signup_email,
+    signup_password,
+    signup_password2
+  } = req.body;
+
+  let errors = [];
+
+  //Check required fields
+  if (
+    !signup_firstname ||
+    !signup_email ||
+    !signup_password ||
+    !signup_password2
+  ) {
+    errors.push({
+      msg: "Please, fill in all fields"
+    });
+  }
+
+  //check password match
+  if (signup_password !== signup_password2) {
+    errors.push({
+      msg: "Passwords do not match"
+    });
+  }
+
+  //   Check PasswordLength
+  if (signup_password.length < 6) {
+    errors.push({
+      msg: "Password length too short. "
+    });
+  }
+
+  if (errors.length > 0) {
+    res.render("register", {
+      errors,
+      signup_firstname,
+      signup_email,
+      signup_password,
+      signup_password2
+    });
+  } else {
+    res.send("pass");
+  }
+});
 
 module.exports = router;

@@ -10,6 +10,7 @@
   --left-msg-bg: #ececec;
   --right-msg-bg: #579ffb;
 }
+
 /* Reset */
 * {
   box-sizing: border-box;
@@ -56,23 +57,29 @@ body {
   overflow-y: auto;
   padding: 10px;
 }
+
 .msger-chat::-webkit-scrollbar {
   width: 6px;
 }
+
 .msger-chat::-webkit-scrollbar-track {
   background: #ddd;
 }
+
 .msger-chat::-webkit-scrollbar-thumb {
   background: #bdbdbd;
 }
+
 .msg {
   display: flex;
   align-items: flex-end;
   margin-bottom: 10px;
 }
+
 .msg:last-of-type {
   margin: 0;
 }
+
 .msg-img {
   width: 50px;
   height: 50px;
@@ -83,22 +90,26 @@ body {
   background-size: cover;
   border-radius: 50%;
 }
+
 .msg-bubble {
   max-width: 450px;
   padding: 15px;
   border-radius: 15px;
   background: var(--left-msg-bg);
 }
+
 .msg-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
 }
+
 .msg-info-name {
   margin-right: 10px;
   font-weight: bold;
 }
+
 .msg-info-time {
   font-size: 0.85em;
 }
@@ -110,11 +121,13 @@ body {
 .right-msg {
   flex-direction: row-reverse;
 }
+
 .right-msg .msg-bubble {
   background: var(--right-msg-bg);
   color: #fff;
   border-bottom-right-radius: 0;
 }
+
 .right-msg .msg-img {
   margin: 0 0 0 10px;
 }
@@ -125,17 +138,20 @@ body {
   border-top: var(--border);
   background: #eee;
 }
+
 .msger-inputarea * {
   padding: 10px;
   border: none;
   border-radius: 3px;
   font-size: 1em;
 }
+
 .msger-input {
   flex: 1;
   background: #ddd;
   margin: 0 !important;
 }
+
 .msger-send-btn {
   padding: 0 20px;
   margin-left: 10px;
@@ -145,6 +161,7 @@ body {
   cursor: pointer;
   transition: background 0.23s;
 }
+
 .msger-send-btn:hover {
   background: rgb(0, 180, 50);
 }
@@ -220,6 +237,7 @@ input,
   padding: 15px 40px;
   font-size: 1.2rem;
 }
+
 .spacer {
   margin-bottom: 25px;
 }
@@ -257,7 +275,7 @@ textarea,
 #update-settings {
   width: 100%;
   padding: 10px;
-  margin: 5px 0 22px 0;
+  margin: 0 0 22px 0;
   display: inline-block;
   border: none;
   background: #f1f1f1;
@@ -304,6 +322,7 @@ textarea,
 hr {
   margin-bottom: 10px;
 }
+
 .post-category {
   background: var(--primary-color);
   color: var(--tertiary-color);
@@ -318,6 +337,7 @@ hr {
   display: flex;
   padding: 10px;
 }
+
 .reply-btn {
   padding: 0 10px;
   margin-left: 10px;
@@ -326,6 +346,15 @@ hr {
   font-weight: bold;
   cursor: pointer;
   transition: background 0.23s;
+}
+
+#login-error-msg {
+  background: #d9534f;
+  padding: 2px;
+  color: var(--tertiary-color);
+  display: block;
+  text-align: left !important;
+  padding-left: 15px;
 }
 
 /* Login & Register Page*/
@@ -349,17 +378,19 @@ hr {
 .login-container {
   display: flex;
   /* flex-direction: column; */
-  height: 80%;
+  height: 85%;
   flex-wrap: nowrap;
 }
 
 .left-content {
   background: var(--secondary-color);
   padding: 40px;
-  align-items: center;
   text-align: center;
   min-height: 500px;
-  vertical-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .right-content {
@@ -368,6 +399,7 @@ hr {
   /* min-width: 300px; */
   min-height: 500px;
 }
+
 #rem-password {
   margin-top: 10px;
 }
@@ -434,12 +466,14 @@ hr {
   border-radius: 50%;
   display: inline-block;
 }
+
 .left-bar {
   background: #e7cefb;
   padding: 20px 0 20px 10px;
   display: none;
   height: 85vh;
 }
+
 .left-bar-options {
   background-color: white;
   border-radius: 5px;
@@ -458,12 +492,14 @@ hr {
   background-color: #bbb;
   border-radius: 50%;
 }
+
 .post-img {
   height: 60px;
   width: 60px;
   background-color: #bbb;
   border-radius: 50%;
 }
+
 .all-replies {
   border-style: unset;
   padding: 15px;
@@ -474,6 +510,7 @@ hr {
 .individual-reply {
   margin-bottom: 15px;
 }
+
 .reply-img {
   height: 60px;
   width: 60px;
@@ -500,12 +537,14 @@ hr {
 .main-div {
   display: flex;
 }
+
 .main-container {
   background: white;
   padding: 20px 10px 20px 10px;
   height: 85vh;
   overflow-y: scroll;
 }
+
 main {
   flex-grow: 1;
 }
@@ -519,14 +558,17 @@ main {
   overflow: hidden;
   margin-bottom: 50px;
 }
+
 .searchIcon {
   padding: 0.5rem;
 }
+
 .searchBox {
   border: 0;
   padding: 0.5rem 0.5rem 0.5rem 0;
   flex: 1;
 }
+
 .searchButton {
   background: var(--primary-color);
   border: 0;
@@ -534,18 +576,22 @@ main {
   padding: 0.5rem;
   border-radius: 0;
 }
+
 #profile-detail {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 30px;
 }
+
 #profile-detail-lists {
   text-align: right;
 }
+
 .profile-detail-list {
   margin-bottom: 5px;
 }
+
 #short-bio {
   background: var(--primary-color);
   border-radius: 5px;
@@ -553,12 +599,14 @@ main {
   margin: 20px 0;
   color: #ffffff;
 }
+
 #short-bio button {
   background: var(--secondary-color);
   padding: 5px;
   font-weight: bold;
   margin-bottom: 10px;
 }
+
 .post-container {
   margin-top: 15px;
   padding: 10px;
@@ -574,29 +622,36 @@ main {
   margin-bottom: 20px;
   border: #908e8e;
 }
+
 .posts {
   background: var(--light-background-color);
   border-radius: 5px;
   padding: 10px 20px;
 }
+
 #post-title {
   text-transform: uppercase;
   padding-bottom: 10px;
 }
+
 #post-header-div {
   display: flex;
 }
+
 #post-header-subdiv2 {
   margin-left: 20px;
 }
+
 #single-posts,
 #upload-pic-text {
   margin-bottom: 20px;
 }
+
 .post-buttons {
   display: flex;
   justify-content: space-between;
 }
+
 .edit-button,
 .delete-button,
 .like-button,
@@ -611,6 +666,7 @@ main {
 #upload-profile-pic {
   margin-bottom: 20px;
 }
+
 .like-button,
 .comment-button,
 .dislike-button {
@@ -621,6 +677,7 @@ main {
 .edit-button {
   font-size: 1 rem;
 }
+
 .delete-button {
   background: red;
   color: white;
@@ -651,6 +708,7 @@ main {
     display: flex;
     justify-content: space-between;
   }
+
   .chat-container {
     background: white;
     height: 85vh;
@@ -661,26 +719,33 @@ main {
     height: 85vh;
     overflow-y: scroll;
   }
+
   main {
     flex-grow: 1;
   }
+
   .menu-button {
     width: auto;
     margin: 5px 0;
   }
+
   .container {
     margin: 0 30px;
   }
+
   #Menu-icon {
     display: none;
   }
+
   .left-bar {
     display: block;
   }
+
   #user-img {
     width: 60%;
   }
 }
+
 @media only screen and (max-width: 1000px) {
   .right-content {
     display: none;
@@ -691,6 +756,7 @@ main {
   .container {
     margin: 0 50px;
   }
+
   .main-container {
     background: white;
     padding: 20px 80px 20px 80px;

@@ -27,9 +27,16 @@ const app = express();
 app.use(expressLayouts);
 app.set("view engine", "ejs");
 
+//BodyParser
+app.use(express.urlencoded({ extended: false }));
+
 //Routes
 app.use("/", require("./routes/app"));
-app.use("/", require("./routes/users"));
+app.use("/users", require("./routes/users"));
+
+app.get("/test/chat", function(req, res) {
+  res.render("chat");
+});
 
 //Set Static Folder
 app.use(express.static(path.join(__dirname, "public")));

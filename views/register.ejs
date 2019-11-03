@@ -8,79 +8,73 @@
           <div class="small-spacer">
             <h2>Welcome to Devconnect</h2>
           </div>
-
           <div class="login-spacer">
             <div class="small-spacer">
               <h4>Create an Account Now</h4>
             </div>
 
-            <div class="login-spacer">
-              <input
-                class="input-round-login test"
-                type="text"
-                name="signup-firstname"
-                id="signup-firstname"
-                placeholder="First Name"
-              />
-            </div>
-            <div class="login-spacer">
-              <!-- <input
-                class="input-round-login"
-                type="text"
-                name="signup-lastname"
-                id="signup-lastname"
-                placeholder="Last Name"
-              /> -->
-              <input
-                class="input-round-login"
-                type="email"
-                name="signup-email"
-                id="signup-email"
-                placeholder="Email adress"
-              />
-            </div>
-            <div class="login-spacer">
-              <input
-                class="input-round-login"
-                type="password"
-                name="signup-password"
-                id="signup-password"
-                placeholder="Password"
-              />
-            </div>
-            <div class="login-spacer">
-              <input
-                class="input-round-login"
-                type="password"
-                name="signup-password"
-                id="signup-password"
-                placeholder="Repeat Password"
-              />
-            </div>
+            <form action="/users/register" method="POST">
+              <% if(typeof errors != 'undefined') { %>
+              <%  errors.forEach(error => { %>
+              <% if (error.msg.includes('Please')){ %>
+              <small id="login-error-msg"> <%= error.msg %></small>
+              <% } %>
+              <% }); %>
+              <% } %>
+              <div class="login-spacer">
+                <input class="input-round-login test" type="text" name="signup_firstname" id="signup-firstname"
+                  placeholder="First Name"
+                  value="<%=typeof signup_firstname!= 'undefined' ? signup_firstname : '' %>" />
+
+              </div>
+              <div class="login-spacer">
+                <input class="input-round-login" type="email" name="signup_email" id="signup-email"
+                  placeholder="Email adress" value="<%=typeof signup_email != 'undefined' ? signup_email : '' %>" />
+              </div>
+              <div class="login-spacer">
+                <% if(typeof errors != 'undefined') { %>
+                <%  errors.forEach(error => { %>
+                <% if (error.msg.includes('short')){ %>
+                <small id="login-error-msg"> <%= error.msg %></small>
+                <% } %>
+                <% }); %>
+                <% } %>
+                <input class="input-round-login" type="password" name="signup_password" id="signup-password"
+                  placeholder="Password" value="<%=typeof signup_password != 'undefined' ? signup_password : '' %>" />
+              </div>
+              <div class="login-spacer">
+                <% if(typeof errors != 'undefined') { %>
+                <%  errors.forEach(error => { %>
+                <% if (error.msg.includes('match')){ %>
+                <small id="login-error-msg"> <%= error.msg %></small>
+                <% } %>
+                <% }); %>
+                <% } %>
+                <input class="input-round-login" type="password" name="signup_password2" id="signup-password2"
+                  placeholder="Repeat Password"
+                  value="<%=typeof signup_password2 != 'undefined' ? signup_password2 : '' %>" />
+              </div>
           </div>
 
           <div class="spacer">
-            <a href="/"
-              ><button class="btn btn-round btn-lg lg-btn-txt">
-                SIGN UP
-              </button></a
-            >
+            <button type="submit" class="btn btn-round btn-lg lg-btn-txt">
+              SIGN UP
+            </button>
           </div>
+          </form>
+
 
           <div class="small-spacer">
             <p>Already have an account?</p>
           </div>
 
-          <p><a href="/" id="login-account"> Login now</a></p>
+          <p><a href="/login" id="login-account"> Login now</a></p>
         </div>
       </div>
       <!-- Right side of login Page -->
       <div class="right-content">
-        <img src="img/connect.svg" alt="" />
+        <img src="/img/connect.svg" alt="" />
       </div>
     </div>
   </div>
-
-  <footer></footer>
-  <script src="js/login.js"></script>
 </body>

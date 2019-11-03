@@ -3,11 +3,11 @@ const mongoose = require("mongoose");
 //User Schema
 
 let userSchema = mongoose.Schema({
-  f_name: {
+  first_name: {
     type: String,
     required: true
   },
-  l_name: {
+  last_name: {
     type: String,
     required: true
   },
@@ -16,7 +16,11 @@ let userSchema = mongoose.Schema({
     required: true
   },
   email: {
-    type: Number,
+    type: String,
+    required: true
+  },
+  date: {
+    type: Date,
     required: true
   },
   password: {

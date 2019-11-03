@@ -6,7 +6,7 @@
         <!-- Login -->
         <div id="left-login-inner">
           <div class="spacer">
-            <h2>Welcome back to Devconnect</h2>
+            <h2>Welcome back!</h2>
           </div>
 
           <div class="small-spacer">
@@ -15,22 +15,12 @@
             </div>
 
             <div class="small-spacer">
-              <input
-                class="input-round-login"
-                type="email"
-                name="login-email"
-                id="login-email"
-                placeholder="Email Adress"
-              />
+              <input class="input-round-login" type="email" name="login-email" id="login-email"
+                placeholder="Email Adress" value="<%=typeof email != 'undefined' ? email : '' %>" />
             </div>
             <div class="small-spacer">
-              <input
-                class="input-round-login"
-                type="password"
-                name="login-password"
-                id="login-password"
-                placeholder="Password"
-              />
+              <input class="input-round-login" type="password" name="login-password" id="login-password"
+                placeholder="Password" value="<%=typeof password != 'undefined' ? password : '' %>" />
               <div id="rem-password">
                 <input type="checkbox" id="remember-password" />
                 <label for="remember-password">Remember password</label>
@@ -39,15 +29,13 @@
           </div>
 
           <div class="spacer">
-            <a href="/profile"
-              ><button class="btn btn-round btn-lg lg-btn-txt">
+            <a href="/users/profile"><button class="btn btn-round btn-lg lg-btn-txt">
                 Login
-              </button></a
-            >
+              </button></a>
           </div>
 
           <div class="small-spacer">
-            <p>Haven't created an account on Devconnect?</p>
+            <p>Haven't created an account?</p>
           </div>
 
           <p>
@@ -57,11 +45,8 @@
       </div>
       <!-- Right side of login Page -->
       <div class="right-content">
-        <img src="img/connect.svg" alt="" />
+        <img src="/img/connect.svg" alt="" />
       </div>
     </div>
   </div>
-
-  <footer></footer>
-  <script src="js/login.js"></script>
 </body>
