@@ -5,6 +5,7 @@
       <div class="left-content">
         <!-- Login -->
         <div id="left-login-inner">
+          <% include partials/msg %>
           <div class="spacer">
             <h2>Welcome back!</h2>
           </div>
@@ -13,26 +14,27 @@
             <div class="spacer">
               <h4>Enter your Login Details</h4>
             </div>
-
-            <div class="small-spacer">
-              <input class="input-round-login" type="email" name="login-email" id="login-email"
-                placeholder="Email Adress" value="<%=typeof email != 'undefined' ? email : '' %>" />
-            </div>
-            <div class="small-spacer">
-              <input class="input-round-login" type="password" name="login-password" id="login-password"
-                placeholder="Password" value="<%=typeof password != 'undefined' ? password : '' %>" />
-              <div id="rem-password">
-                <input type="checkbox" id="remember-password" />
-                <label for="remember-password">Remember password</label>
+            <form action="/login" method="POST">
+              <div class="small-spacer">
+                <input class="input-round-login" type="email" name="signup_email" id="signup_email"
+                  placeholder="Email Adress" />
               </div>
-            </div>
+              <div class="small-spacer">
+                <input class="input-round-login" type="password" name="signup_password" id="signup_password"
+                  placeholder=" Password" />
+                <div id="rem-password">
+                  <input type="checkbox" id="remember-password" />
+                  <label for="remember-password">Remember password</label>
+                </div>
+              </div>
           </div>
 
           <div class="spacer">
-            <a href="/users/profile"><button class="btn btn-round btn-lg lg-btn-txt">
-                Login
-              </button></a>
+            <button type="submit" class="btn btn-round btn-lg lg-btn-txt">
+              Login
+            </button>
           </div>
+          </form>
 
           <div class="small-spacer">
             <p>Haven't created an account?</p>

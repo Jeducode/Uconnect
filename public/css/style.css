@@ -357,6 +357,15 @@ hr {
   padding-left: 15px;
 }
 
+#login-success-msg {
+  background: green;
+  padding: 7px 2px;
+  color: var(--tertiary-color);
+  display: block;
+  text-align: left !important;
+  padding-left: 15px;
+}
+
 /* Login & Register Page*/
 
 .right-content img {

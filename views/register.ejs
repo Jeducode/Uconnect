@@ -13,10 +13,10 @@
               <h4>Create an Account Now</h4>
             </div>
 
-            <form action="/users/register" method="POST">
+            <form action="/register" method="POST">
               <% if(typeof errors != 'undefined') { %>
               <%  errors.forEach(error => { %>
-              <% if (error.msg.includes('Please')){ %>
+              <% if (error.msg.includes('Please') || error.msg.includes('Email')  ){ %>
               <small id="login-error-msg"> <%= error.msg %></small>
               <% } %>
               <% }); %>
